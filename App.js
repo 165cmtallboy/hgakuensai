@@ -32,12 +32,11 @@ function LoadingScreen({ navigation }) {
 function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <ImageBackground
-       source={require('./assets/本棚.png')} resizeMode="cover"style={styles.image}
-      >
+        <Image source={require('./assets/menu1.png')} style={styles.menuimg}/>
+        <Image source={require('./assets/menu2.png')} style={styles.booksimg}/>
+        <Image source={require('./assets/menu3.png')} style={styles.booksimg}/>
+        <Image source={require('./assets/menu4.png')} style={styles.booksimg}/>
         <SNS></SNS>
-        <Text>hey, yo</Text>
-      </ImageBackground>
       </View>
   );
 }
@@ -79,6 +78,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center"
   },
+  menuimg: {
+    height: 100,
+    width: '100%'
+  },
+  booksimg: {
+    height: 160,
+    width: '100%'
+  }
 
 });
 
