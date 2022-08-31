@@ -5,6 +5,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 
 import SNS from './Components/SNS.js'
+import Book from './Components/Book.js';
+import Congest from './Components/Congest.js';
+import Map from './Components/Map.js';
+import Notifications from './Components/Notifications.js';
+import Timeline from './Components/Timeline.js';
 
 function DetailsScreen() {
   return (
@@ -32,12 +37,8 @@ function LoadingScreen({ navigation }) {
 function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <ImageBackground
-       source={require('./assets/本棚.png')} resizeMode="cover"style={styles.image}
-      >
+        <Book navigation={navigation}></Book>
         <SNS></SNS>
-        <Text>hey, yo</Text>
-      </ImageBackground>
       </View>
   );
 }
@@ -55,7 +56,10 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} options={{headerShown:false}} />
-        <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="Congest" component={Congest} />
+        <Stack.Screen name="Map" component={Map} />
+        <Stack.Screen name="Notifications" component={Notifications} />
+        <Stack.Screen name="Timeline" component={Timeline} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -78,7 +82,7 @@ const styles = StyleSheet.create({
   image: {
     flex: 1,
     justifyContent: "center"
-  },
+  }
 
 });
 
