@@ -4,6 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 
+import SNS from './Components/SNS.js'
+
 function DetailsScreen() {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
@@ -33,7 +35,8 @@ function HomeScreen({ navigation }) {
       <ImageBackground
        source={require('./assets/本棚.png')} resizeMode="cover"style={styles.image}
       >
-        <Text>Inside</Text>
+        <SNS></SNS>
+        <Text>hey, yo</Text>
       </ImageBackground>
       </View>
   );
