@@ -1,28 +1,36 @@
 import { View, Image, StyleSheet, TouchableOpacity } from "react-native";
 
-export default function(){
+export default function({ navigation }){
     return(
     <View>
-
-        <TouchableOpacity>
+        <TouchableOpacity
+            onPress={() => navigation.push('Notifications')}
+        >
             <Image 
                 source={require('../assets/menu1.png')} 
                 style={styles.menuimg}
+                
             />
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity
+            onPress={() => navigation.push('Map')}
+        >
             <Image 
                 source={require('./../assets/menu2.png')} 
                 style={styles.booksimg}
             />
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity
+            onPress={() => navigation.push('Timeline')}
+        >
             <Image 
                 source={require('./../assets/menu3.png')} 
                 style={styles.booksimg}
             />
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity
+            onPress={() => navigation.push('Congest')}
+        >
             <Image 
                 source={require('./../assets/menu4.png')} 
                 style={styles.booksimg}

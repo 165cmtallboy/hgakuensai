@@ -33,7 +33,7 @@ function LoadingScreen({ navigation }) {
 function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-        <Book></Book>
+        <Book navigation={navigation}></Book>
         <SNS></SNS>
       </View>
   );
