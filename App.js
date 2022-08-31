@@ -6,6 +6,10 @@ import React from 'react';
 
 import SNS from './Components/SNS.js'
 import Book from './Components/Book.js';
+import Congest from './Components/Congest.js';
+import Map from './Components/Map.js';
+import Notifications from './Components/Notifications.js';
+import Timeline from './Components/Timeline.js';
 
 function DetailsScreen() {
   return (
@@ -52,7 +56,10 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} options={{headerShown:false}} />
-        <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="Congest" component={Congest} />
+        <Stack.Screen name="Map" component={Map} />
+        <Stack.Screen name="Notifications" component={Notifications} />
+        <Stack.Screen name="Timeline" component={Timeline} />
       </Stack.Navigator>
     </NavigationContainer>
   );
