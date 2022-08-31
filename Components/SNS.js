@@ -24,12 +24,11 @@ const App = () => {
           <Image
             source={{
               uri:
-                'https://pbs.twimg.com/media/FberdVPaAAA8Wmo?format=jpg&name=medium',
+                'https://raw.githubusercontent.com/AboutReact/sampleresource/master/facebook.png',
             }}
             style={styles.buttonImageIconStyle}
           />
           <View style={styles.buttonIconSeparatorStyle} />
-          <Text style={styles.buttonTextStyle}>aUsing Facebook</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.buttonGPlusStyle} activeOpacity={0.5}>
           <Image
@@ -40,8 +39,28 @@ const App = () => {
             style={styles.buttonImageIconStyle}
           />
           <View style={styles.buttonIconSeparatorStyle} />
-          <Text style={styles.buttonTextStyle}>Login Using Google Plus</Text>
         </TouchableOpacity>
+         <TouchableOpacity style={styles.buttonTwitterStyle} activeOpacity={0.5}>
+          <Image
+            source={{
+              uri:
+                'https://raw.githubusercontent.com/AboutReact/sampleresource/master/google-plus.png',
+            }}
+            style={styles.buttonImageIconStyle}
+          />
+          <View style={styles.buttonIconSeparatorStyle} />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.buttonTwitterStyle} activeOpacity={0.5}>
+          <Image
+            source={{
+              uri:
+                'https://raw.githubusercontent.com/AboutReact/sampleresource/master/google-plus.png',
+            }}
+            style={styles.buttonImageIconStyle}
+          />
+          <View style={styles.buttonIconSeparatorStyle} />
+        </TouchableOpacity>
+        
       </View>
     </SafeAreaView>
   );
@@ -50,9 +69,10 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    margin: 10,
-    marginTop: 30,
-    padding: 30,
+    flexDirection: 'row',
+    alignItems: 'center',
+    margin: -95,
+    padding: 100,
   },
   buttonGPlusStyle: {
     flexDirection: 'row',
@@ -60,37 +80,53 @@ const styles = StyleSheet.create({
     backgroundColor: '#dc4e41',
     borderWidth: 0.5,
     borderColor: '#fff',
-    height: 40,
+    height: 60,
+    width: 60,
     borderRadius: 5,
-    margin: 5,
+    margin: 20,
   },
-  buttonFacebookStyle: {
+  buttonTwitterStyle: {
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: '#1da1f2',
     borderWidth: 0.5,
     borderColor: '#fff',
-    height: 40,
+    height: 60,
+    width: 60,
     borderRadius: 5,
-    margin: 5,
+    margin: 20,
   },
+  buttonInstagramStyle: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#485a96',
+    borderWidth: 0.5,
+    borderColor: '#fff',
+    height: 60,
+    width: 60,
+    borderRadius: 5,
+    margin: 20,
+  },
+  buttonFacebookStyle: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#485a96',
+    borderWidth: 0.5,
+    borderColor: '#fff',
+    height: 60,
+    width: 60,
+    borderRadius: 5,
+    margin: 20,
+  },
+  
   buttonImageIconStyle: {
     padding: 10,
     margin: 5,
-    height: 25,
-    width: 25,
+    height: 45,
+    width: 45,
     resizeMode: 'stretch',
   },
-  buttonTextStyle: {
-    color: '#fff',
-    marginBottom: 4,
-    marginLeft: 10,
-  },
-  buttonIconSeparatorStyle: {
-    backgroundColor: '#fff',
-    width: 1,
-    height: 40,
-  },
+  
 });
 
 export default App;
