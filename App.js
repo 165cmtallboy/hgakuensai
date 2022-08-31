@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 
 import SNS from './Components/SNS.js'
+import Book from './Components/Book.js';
 
 function DetailsScreen() {
   return (
@@ -32,10 +33,7 @@ function LoadingScreen({ navigation }) {
 function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-        <Image source={require('./assets/menu1.png')} style={styles.menuimg}/>
-        <Image source={require('./assets/menu2.png')} style={styles.booksimg}/>
-        <Image source={require('./assets/menu3.png')} style={styles.booksimg}/>
-        <Image source={require('./assets/menu4.png')} style={styles.booksimg}/>
+        <Book></Book>
         <SNS></SNS>
       </View>
   );
@@ -77,14 +75,6 @@ const styles = StyleSheet.create({
   image: {
     flex: 1,
     justifyContent: "center"
-  },
-  menuimg: {
-    height: 100,
-    width: '100%'
-  },
-  booksimg: {
-    height: 160,
-    width: '100%'
   }
 
 });
