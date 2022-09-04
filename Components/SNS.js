@@ -12,6 +12,8 @@ import {
   Text,
   Image,
   TouchableOpacity,
+  Alert,
+  Linking,
 } from 'react-native';
 
 const App = () => {
@@ -19,13 +21,11 @@ const App = () => {
     <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>
         <TouchableOpacity
-          style={styles.buttonFacebookStyle}
+          onPress={()=>Linking.openURL('https://twitter.com/60th_hachisai')}
+          style={styles.buttonTwitterStyle}
           activeOpacity={0.5}>
           <Image
-            source={{
-              uri:
-                'https://raw.githubusercontent.com/AboutReact/sampleresource/master/facebook.png',
-            }}
+            source={require('../assets/2021Twitterlogo.png')}
             style={styles.buttonImageIconStyle}
           />
           <View style={styles.buttonIconSeparatorStyle} />
