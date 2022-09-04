@@ -30,12 +30,13 @@ const App = () => {
           />
           <View style={styles.buttonIconSeparatorStyle} />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.buttonGPlusStyle} activeOpacity={0.5}>
+
+        <TouchableOpacity 
+          onPress={()=>Linking.openURL('https://www.instagram.com/60th_hachisai')}
+          style={styles.buttonInstagramStyle} 
+          activeOpacity={0.5}>
           <Image
-            source={{
-              uri:
-                'https://raw.githubusercontent.com/AboutReact/sampleresource/master/google-plus.png',
-            }}
+            source={require('../assets/Instagramlogo.png')}
             style={styles.buttonImageIconStyle}
           />
           <View style={styles.buttonIconSeparatorStyle} />
@@ -74,17 +75,7 @@ const styles = StyleSheet.create({
     margin: -95,
     padding: 100,
   },
-  buttonGPlusStyle: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#dc4e41',
-    borderWidth: 0.5,
-    borderColor: '#fff',
-    height: 60,
-    width: 60,
-    borderRadius: 5,
-    margin: 20,
-  },
+
   buttonTwitterStyle: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -94,18 +85,19 @@ const styles = StyleSheet.create({
     height: 60,
     width: 60,
     borderRadius: 5,
-    margin: 20,
+    margin: 23,
   },
   buttonInstagramStyle: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#485a96',
+    //backgroundColor: '#e1306c',
+    backgroundColor: '#f54daa',
     borderWidth: 0.5,
     borderColor: '#fff',
     height: 60,
     width: 60,
     borderRadius: 5,
-    margin: 20,
+    margin: 23,
   },
   buttonFacebookStyle: {
     flexDirection: 'row',
@@ -116,12 +108,12 @@ const styles = StyleSheet.create({
     height: 60,
     width: 60,
     borderRadius: 5,
-    margin: 20,
+    margin: 23,
   },
   
   buttonImageIconStyle: {
     padding: 10,
-    margin: 5,
+    margin: 7,
     height: 45,
     width: 45,
     resizeMode: 'stretch',
