@@ -37,7 +37,7 @@ const App = () => {
           style={styles.buttonInstagramStyle} 
           activeOpacity={0.5}>
           <Image
-            source={require('../assets/Instagramlogo.png')}
+            source={require('../assets/Instagramlogo_white.png')}
             style={styles.buttonImageIconStyle}
           />
           <View style={styles.buttonIconSeparatorStyle} />
