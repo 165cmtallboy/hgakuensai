@@ -28,7 +28,6 @@ const App = () => {
             source={require('../assets/2021Twitterlogo.png')}
             style={styles.buttonImageIconStyle}
           />
-          <View style={styles.buttonIconSeparatorStyle} />
           <Text style={styles.buttonTextStyle}>Twitter</Text>
         </TouchableOpacity>
 
@@ -40,7 +39,6 @@ const App = () => {
             source={require('../assets/Instagramlogo_white.png')}
             style={styles.buttonImageIconStyle}
           />
-          <View style={styles.buttonIconSeparatorStyle} />
           <Text style={styles.buttonTextStyle}>Instagram</Text>
         </TouchableOpacity>
 
@@ -48,7 +46,6 @@ const App = () => {
           onPress={()=>Linking.openURL('https://youtube.com/channel/UCnpniRRt0FdUFXYxQ1n0yjg')}
           style={styles.buttonYoutubeStyle} 
           activeOpacity={0.5}>
-            
           <Image
             source={{
               uri:
@@ -56,7 +53,6 @@ const App = () => {
             }}
             style={styles.buttonImageIconStyle}
           />
-          <View style={styles.buttonIconSeparatorStyle} />
           <Text style={styles.buttonTextStyle}>Youtube</Text>
         </TouchableOpacity>
 
@@ -71,7 +67,6 @@ const App = () => {
             }}
             style={styles.buttonImageIconStyle}
           />
-          <View style={styles.buttonIconSeparatorStyle} />
           <Text style={styles.buttonTextStyle}>HomePage</Text>
         </TouchableOpacity>
         
@@ -147,7 +142,7 @@ const styles = StyleSheet.create({
     color: '#000000',
     marginBottom: -85,
     marginLeft: -60,
-    fontSize:17,
+    fontSize: 17,
   },
   
 });
