@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     height: 60,
     width: 60,
     borderRadius: 5,
-    margin: 23,
+    margin: 20,
   },
   buttonInstagramStyle: {
     flexDirection: 'row',
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     height: 60,
     width: 60,
     borderRadius: 5,
-    margin: 23,
+    margin: 20,
   },
   buttonYoutubeStyle: {
     flexDirection: 'row',
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
     height: 60,
     width: 60,
     borderRadius: 5,
-    margin: 23,
+    margin: 20,
   },
   
   buttonImageIconStyle: {
