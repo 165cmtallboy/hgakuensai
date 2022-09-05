@@ -29,6 +29,7 @@ const App = () => {
             style={styles.buttonImageIconStyle}
           />
           <View style={styles.buttonIconSeparatorStyle} />
+          <Text style={styles.buttonTextStyle}>Twitter</Text>
         </TouchableOpacity>
 
         <TouchableOpacity 
@@ -40,8 +41,10 @@ const App = () => {
             style={styles.buttonImageIconStyle}
           />
           <View style={styles.buttonIconSeparatorStyle} />
+          <Text style={styles.buttonTextStyle}>Instagram</Text>
         </TouchableOpacity>
-         <TouchableOpacity style={styles.buttonTwitterStyle} activeOpacity={0.5}>
+
+         <TouchableOpacity style={styles.buttonYoutubeStyle} activeOpacity={0.5}>
           <Image
             source={{
               uri:
@@ -50,7 +53,9 @@ const App = () => {
             style={styles.buttonImageIconStyle}
           />
           <View style={styles.buttonIconSeparatorStyle} />
+          <Text style={styles.buttonTextStyle}>Youtube</Text>
         </TouchableOpacity>
+
         <TouchableOpacity style={styles.buttonTwitterStyle} activeOpacity={0.5}>
           <Image
             source={{
@@ -60,6 +65,7 @@ const App = () => {
             style={styles.buttonImageIconStyle}
           />
           <View style={styles.buttonIconSeparatorStyle} />
+          <Text style={styles.buttonTextStyle}>HomePage</Text>
         </TouchableOpacity>
         
       </View>
@@ -99,10 +105,11 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     margin: 23,
   },
-  buttonFacebookStyle: {
+  buttonYoutubeStyle: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#485a96',
+    //backgroundColor: '#c4302b',
+    backgroundColor: '#ff0000',
     borderWidth: 0.5,
     borderColor: '#fff',
     height: 60,
@@ -117,6 +124,12 @@ const styles = StyleSheet.create({
     height: 45,
     width: 45,
     resizeMode: 'stretch',
+  },
+  buttonTextStyle: {
+    color: '#000000',
+    marginBottom: -85,
+    marginLeft: -60,
+    fontSize:17,
   },
   
 });
