@@ -47,10 +47,7 @@ const App = () => {
           style={styles.buttonYoutubeStyle} 
           activeOpacity={0.5}>
           <Image
-            source={{
-              uri:
-                'https://raw.githubusercontent.com/AboutReact/sampleresource/master/google-plus.png',
-            }}
+            source={require('../assets/Instagramlogo_white.png')}
             style={styles.buttonImageIconStyle}
           />
           <Text style={styles.buttonTextStyle}>Youtube</Text>
@@ -61,10 +58,7 @@ const App = () => {
           style={styles.buttonHomepageStyle} 
           activeOpacity={0.5}>
           <Image
-            source={{
-              uri:
-                'https://raw.githubusercontent.com/AboutReact/sampleresource/master/google-plus.png',
-            }}
+            source={require('../assets/Instagramlogo_white.png')}
             style={styles.buttonImageIconStyle}
           />
           <Text style={styles.buttonTextStyle}>HomePage</Text>
