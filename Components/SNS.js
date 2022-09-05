@@ -44,7 +44,11 @@ const App = () => {
           <Text style={styles.buttonTextStyle}>Instagram</Text>
         </TouchableOpacity>
 
-         <TouchableOpacity style={styles.buttonYoutubeStyle} activeOpacity={0.5}>
+         <TouchableOpacity 
+          onPress={()=>Linking.openURL('https://youtube.com/channel/UCnpniRRt0FdUFXYxQ1n0yjg')}
+          style={styles.buttonYoutubeStyle} 
+          activeOpacity={0.5}>
+            
           <Image
             source={{
               uri:
@@ -56,7 +60,10 @@ const App = () => {
           <Text style={styles.buttonTextStyle}>Youtube</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.buttonTwitterStyle} activeOpacity={0.5}>
+        <TouchableOpacity
+          onPress={()=>Linking.openURL('https://hachiojisaionline.wordpress.com')} 
+          style={styles.buttonHomepageStyle} 
+          activeOpacity={0.5}>
           <Image
             source={{
               uri:
@@ -110,6 +117,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     //backgroundColor: '#c4302b',
     backgroundColor: '#ff0000',
+    borderWidth: 0.5,
+    borderColor: '#fff',
+    height: 60,
+    width: 60,
+    borderRadius: 5,
+    margin: 20,
+  },
+  buttonHomepageStyle: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#797979',
     borderWidth: 0.5,
     borderColor: '#fff',
     height: 60,
