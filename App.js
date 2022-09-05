@@ -69,20 +69,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'center',
+    display: 'flex',
+    
   },
   tinyLogo: {
     width: '100%',
     height: 250
   },
-  container: {
-    flex: 1,
-  },
   image: {
     flex: 1,
-    justifyContent: "center"
+    
   }
-
 });
+
+
 

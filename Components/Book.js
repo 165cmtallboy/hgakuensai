@@ -41,12 +41,12 @@ export default function({ navigation }){
 
 const styles = StyleSheet.create({
     menuimg: {
-      height: 100,
-      width: '100%'
+      width: '100%',
+      height: 107
     },
     booksimg: {
-      height: 160,
-      width: '100%'
+      width: '100%',
+      height: 189
     }
   
   });

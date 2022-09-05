@@ -16,7 +16,7 @@ import {
 
 const App = () => {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={{}}>
       <View style={styles.container}>
         <TouchableOpacity
           style={styles.buttonFacebookStyle}
@@ -68,7 +68,6 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
     margin: -95,
