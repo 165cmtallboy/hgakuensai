@@ -10,6 +10,7 @@ import Congest from './Components/Congest.js';
 import Map from './Components/Map.js';
 import Notifications from './Components/Notifications.js';
 import Timeline from './Components/Timeline.js';
+import checkNotif from './notif';
 
 function DetailsScreen() {
   return (
@@ -47,8 +48,8 @@ function HomeScreen({ navigation }) {
 
 export default function App() {
   const [loading, setLoading] = React.useState(true);
-  React.useEffect(() => setTimeout(() => setLoading(false), 1000), []);
-
+  React.useEffect(() => setTimeout(() => setLoading(false), 1000), []); 
+  React.useEffect(() => {checkNotif()}, []);
   if(loading)
     return(<LoadingScreen />)
 
