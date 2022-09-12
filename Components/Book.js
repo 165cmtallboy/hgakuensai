@@ -2,7 +2,7 @@ import { View, Image, StyleSheet, TouchableOpacity } from "react-native";
 
 export default function({ navigation }){
     return(
-    <View>
+    <View style={styles.container}>
         <TouchableOpacity
             onPress={() => navigation.push('Notifications')}
         >
@@ -47,6 +47,9 @@ const styles = StyleSheet.create({
     booksimg: {
       height: 160,
       width: '100%'
+    },
+    container: {
+        width: '100%'
     }
   
   });

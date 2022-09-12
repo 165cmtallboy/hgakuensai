@@ -71,13 +71,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    width: '100%'
   },
   tinyLogo: {
     width: '100%',
     height: 250
-  },
-  container: {
-    flex: 1,
   },
   image: {
     flex: 1,

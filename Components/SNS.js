@@ -18,7 +18,6 @@ import {
 
 const App = () => {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>
         <TouchableOpacity
           onPress={()=>Linking.openURL('https://twitter.com/60th_hachisai')}
@@ -28,7 +27,7 @@ const App = () => {
             source={require('../assets/2021Twitterlogo.png')}
             style={styles.buttonImageIconStyle}
           />
-          <Text style={styles.buttonTextStyle}>Twitter</Text>
+          {/* <Text style={styles.buttonTextStyle}>Twitter</Text> */}
         </TouchableOpacity>
 
         <TouchableOpacity 
@@ -39,7 +38,7 @@ const App = () => {
             source={require('../assets/Instagramlogo_white.png')}
             style={styles.buttonImageIconStyle}
           />
-          <Text style={styles.buttonTextStyle}>Instagram</Text>
+          {/* <Text style={styles.buttonTextStyle}>Instagram</Text> */}
         </TouchableOpacity>
 
          <TouchableOpacity 
@@ -50,7 +49,7 @@ const App = () => {
             source={require('../assets/Instagramlogo_white.png')}
             style={styles.buttonImageIconStyle}
           />
-          <Text style={styles.buttonTextStyle}>Youtube</Text>
+          {/* <Text style={styles.buttonTextStyle}>Youtube</Text> */}
         </TouchableOpacity>
 
         <TouchableOpacity
@@ -61,11 +60,10 @@ const App = () => {
             source={require('../assets/Instagramlogo_white.png')}
             style={styles.buttonImageIconStyle}
           />
-          <Text style={styles.buttonTextStyle}>HomePage</Text>
+          {/* <Text style={styles.buttonTextStyle}>HomePage</Text> */}
         </TouchableOpacity>
         
       </View>
-    </SafeAreaView>
   );
 };
 
@@ -74,8 +72,8 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    margin: -95,
-    padding: 100,
+    width: '100%',
+    height: 100
   },
 
   buttonTwitterStyle: {
@@ -84,8 +82,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#1da1f2',
     borderWidth: 0.5,
     borderColor: '#fff',
-    height: 60,
-    width: 60,
+    height: 50,
+    width: 50,
     borderRadius: 5,
     margin: 20,
   },
@@ -96,8 +94,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#f54daa',
     borderWidth: 0.5,
     borderColor: '#fff',
-    height: 60,
-    width: 60,
+    height: 50,
+    width: 50,
     borderRadius: 5,
     margin: 20,
   },
@@ -108,8 +106,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#ff0000',
     borderWidth: 0.5,
     borderColor: '#fff',
-    height: 60,
-    width: 60,
+    height: 50,
+    width: 50,
     borderRadius: 5,
     margin: 20,
   },
@@ -119,17 +117,17 @@ const styles = StyleSheet.create({
     backgroundColor: '#797979',
     borderWidth: 0.5,
     borderColor: '#fff',
-    height: 60,
-    width: 60,
+    height: 50,
+    width: 50,
     borderRadius: 5,
     margin: 20,
   },
   
   buttonImageIconStyle: {
-    padding: 10,
-    margin: 7,
-    height: 45,
-    width: 45,
+    padding: 20,
+    margin: 5,
+    height: 40,
+    width: 40,
     resizeMode: 'stretch',
   },
   buttonTextStyle: {
